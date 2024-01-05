@@ -13,6 +13,8 @@ body, h1, h2, p {
   top: 0;
   width: 100%;
   z-index: 1000;
+  opacity: 0; /* Initially set opacity to 0 to hide the navigation */
+  transition: opacity 1s ease; /* Apply a smooth transition effect */
 }
 
 #navbar ul {
@@ -34,6 +36,10 @@ body, h1, h2, p {
 
 #navbar ul li a:hover {
   background-color: #1E8DA8; /* Bleu clair */
+}
+
+#navbar.visible {
+  opacity: 1; /* Set opacity to 1 to make the navigation visible */
 }
 
 /* Sections */
